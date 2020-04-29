@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		F21393C62459C94D00FE358A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21393C52459C94D00FE358A /* AppDelegate.swift */; };
 		F21393C82459C94D00FE358A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21393C72459C94D00FE358A /* SceneDelegate.swift */; };
-		F21393CA2459C94D00FE358A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21393C92459C94D00FE358A /* ContentView.swift */; };
 		F21393CC2459C94E00FE358A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F21393CB2459C94E00FE358A /* Assets.xcassets */; };
 		F21393CF2459C94E00FE358A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F21393CE2459C94E00FE358A /* Preview Assets.xcassets */; };
 		F21393D22459C94E00FE358A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F21393D02459C94E00FE358A /* LaunchScreen.storyboard */; };
+		F21393DE2459CA6200FE358A /* RoomDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21393DB2459CA6200FE358A /* RoomDetail.swift */; };
+		F21393DF2459CA6200FE358A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21393DC2459CA6200FE358A /* ContentView.swift */; };
+		F21393E02459CA6200FE358A /* RoomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21393DD2459CA6200FE358A /* RoomCell.swift */; };
+		F21393E32459CA7400FE358A /* RoomStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21393E12459CA7400FE358A /* RoomStore.swift */; };
+		F21393E42459CA7400FE358A /* RoomModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21393E22459CA7400FE358A /* RoomModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F21393C22459C94D00FE358A /* Rooms.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rooms.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F21393C52459C94D00FE358A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F21393C72459C94D00FE358A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F21393C92459C94D00FE358A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F21393CB2459C94E00FE358A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F21393CE2459C94E00FE358A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F21393D12459C94E00FE358A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F21393D32459C94E00FE358A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F21393DB2459CA6200FE358A /* RoomDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomDetail.swift; sourceTree = "<group>"; };
+		F21393DC2459CA6200FE358A /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F21393DD2459CA6200FE358A /* RoomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomCell.swift; sourceTree = "<group>"; };
+		F21393E12459CA7400FE358A /* RoomStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomStore.swift; sourceTree = "<group>"; };
+		F21393E22459CA7400FE358A /* RoomModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +64,10 @@
 		F21393C42459C94D00FE358A /* Rooms */ = {
 			isa = PBXGroup;
 			children = (
+				F21393DA2459C9CB00FE358A /* Model */,
+				F21393D92459C9BD00FE358A /* View */,
 				F21393C52459C94D00FE358A /* AppDelegate.swift */,
 				F21393C72459C94D00FE358A /* SceneDelegate.swift */,
-				F21393C92459C94D00FE358A /* ContentView.swift */,
 				F21393CB2459C94E00FE358A /* Assets.xcassets */,
 				F21393D02459C94E00FE358A /* LaunchScreen.storyboard */,
 				F21393D32459C94E00FE358A /* Info.plist */,
@@ -73,6 +82,25 @@
 				F21393CE2459C94E00FE358A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F21393D92459C9BD00FE358A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F21393E22459CA7400FE358A /* RoomModel.swift */,
+				F21393E12459CA7400FE358A /* RoomStore.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F21393DA2459C9CB00FE358A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F21393DC2459CA6200FE358A /* ContentView.swift */,
+				F21393DD2459CA6200FE358A /* RoomCell.swift */,
+				F21393DB2459CA6200FE358A /* RoomDetail.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,9 +174,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F21393E42459CA7400FE358A /* RoomModel.swift in Sources */,
 				F21393C62459C94D00FE358A /* AppDelegate.swift in Sources */,
+				F21393DF2459CA6200FE358A /* ContentView.swift in Sources */,
 				F21393C82459C94D00FE358A /* SceneDelegate.swift in Sources */,
-				F21393CA2459C94D00FE358A /* ContentView.swift in Sources */,
+				F21393E02459CA6200FE358A /* RoomCell.swift in Sources */,
+				F21393E32459CA7400FE358A /* RoomStore.swift in Sources */,
+				F21393DE2459CA6200FE358A /* RoomDetail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
