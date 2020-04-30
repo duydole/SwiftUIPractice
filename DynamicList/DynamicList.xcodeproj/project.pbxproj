@@ -56,6 +56,8 @@
 		F2139459245B285800FE358A /* DynamicList */ = {
 			isa = PBXGroup;
 			children = (
+				F213946F245B28CF00FE358A /* Model */,
+				F213946E245B28CB00FE358A /* View */,
 				F213945A245B285800FE358A /* AppDelegate.swift */,
 				F213945C245B285800FE358A /* SceneDelegate.swift */,
 				F213945E245B285800FE358A /* ContentView.swift */,
@@ -73,6 +75,20 @@
 				F2139463245B285800FE358A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F213946E245B28CB00FE358A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F213946F245B28CF00FE358A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
