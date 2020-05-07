@@ -9,8 +9,17 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var isPresented: Bool = false
     var body: some View {
-        Text("Hello, World!")
+        NavigationView {
+            VStack {
+                Button(action: {
+                    self.isPresented.toggle()
+                }) {Text("Show standard modal")}
+            }
+            .navigationBarTitle(Text("Standard"))
+            .sheet(isPresented: $isPresented) {Text("HERE IS MY MODAL")}
+        }
     }
 }
 
